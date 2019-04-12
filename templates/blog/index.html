@@ -1,0 +1,13 @@
+{% extends "blog/base.html" %}
+{% block body_block %}
+<div class="container">
+  <div class="jumbotron">
+    <h1>Welcome to the Blog !</h1>
+    {% if user.is_authenticated %}
+        <h2>Hello {{ user.username }}</h2>
+    {% else %}
+        <h2>Register or Login if you'd like to be a part of the blog</h2>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}
