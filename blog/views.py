@@ -1,4 +1,4 @@
-# dappx/views.py
+# blog/views.py
 from django.shortcuts import render
 from blog.forms import UserForm,UserProfileInfoForm
 from django.contrib.auth import authenticate, login, logout
